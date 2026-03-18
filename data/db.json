@@ -1,0 +1,53 @@
+{
+  "clients": [
+    {
+      "id": "C-0001",
+      "name": "Michael",
+      "phone": "849-432-2537",
+      "address": "",
+      "notes": "",
+      "createdAt": "2026-03-18T15:48:45.269Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "S-0001",
+      "name": "Instalacion de Microsoft office",
+      "price": 450,
+      "description": "Instalación y configuración de Microsoft Office, incluyendo activación, ajustes básicos y verificación de funcionamiento correcto en el equipo.",
+      "createdAt": "2026-03-18T15:50:18.135Z"
+    }
+  ],
+  "receipts": [
+    {
+      "id": "R-0001",
+      "clientId": "C-0001",
+      "items": [
+        {
+          "serviceId": "S-0001",
+          "description": "Instalacion de Microsoft office",
+          "qty": 1,
+          "unitPrice": 450,
+          "subtotal": 450
+        }
+      ],
+      "subtotal": 450,
+      "tax": 0,
+      "discount": 0,
+      "total": 450,
+      "paymentMethod": "Efectivo",
+      "notes": "Realizado",
+      "photos": [],
+      "createdAt": "2026-03-18T15:50:42.109Z",
+      "lastEditedBy": null,
+      "editedAt": null,
+      "anulled": false,
+      "anulledReason": null
+    }
+  ],
+  "counters": {
+    "receipt": 1,
+    "client": 1,
+    "service": 1
+  }
+}
