@@ -23,8 +23,8 @@ if (!process.env.JWT_SECRET) {
   process.exit(1);
 }
 
-if (!process.env.ADMIN_EMAIL || !process.env.ADMIN_PASSWORD) {
-  console.error('ERROR: Faltan ADMIN_EMAIL o ADMIN_PASSWORD en el archivo .env');
+if (!process.env.ADMIN_USERS) {
+  console.error('ERROR: Falta ADMIN_USERS en el archivo .env  (formato: correo1:pass1,correo2:pass2)');
   process.exit(1);
 }
 
