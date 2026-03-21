@@ -433,6 +433,10 @@ app.get('/api/stats', async (req, res) => {
   });
 });
 
+app.get('/', (req, res) => {
+  res.send('API is running');
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Receipts Mini-ERP API running on port ${PORT}`);
   console.log(`Database connected to: Supabase`);
