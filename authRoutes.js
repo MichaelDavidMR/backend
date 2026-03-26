@@ -4,9 +4,6 @@ const authMiddleware = require('./authMiddleware');
 
 const router = express.Router();
 
-// Carga los admins desde el .env
-// Formato en .env:
-//   ADMIN_USERS=correo1@x.com:Password1,correo2@x.com:Password2
 function getAdmins() {
   const raw = process.env.ADMIN_USERS || '';
   return raw.split(',').map(entry => {
@@ -15,7 +12,6 @@ function getAdmins() {
   }).filter(u => u.email && u.password);
 }
 
-// POST /api/auth/login
 router.post('/login', (req, res) => {
   const { email, password } = req.body;
 
